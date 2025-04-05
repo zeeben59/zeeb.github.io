@@ -788,10 +788,22 @@ h3.my-profession{
 
 
 @media (max-width:767px){
+    
+ .home .home-img {
+        margin-top: -20%;
 
-    .home .home-img{
-        display: none;
+    
     }
+
+    .home-img img{
+        height: -30%;
+    }
+    
+
+    #about{
+        margin-top: 30%;
+    }
+
 
 
     .contact .contact-info-item,
