@@ -559,7 +559,7 @@
     </nav>
 
     <!-- Hero Section -->
-  <section id="home" class="hero-section">
+<section id="home" class="hero-section">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 hero-content">
@@ -569,8 +569,8 @@
                 <p>I'm a web developer with extensive experience for over years. My expertise includes creating website designs, graphic designs, automated Telegram bots, software development, and many more.</p>
                 <div class="mt-4">
                     <a href="#contact" class="btn btn-primary me-3">Hire Me</a>
-                    <!-- Fixed Download CV link -->
-                    <a href="Monwuba-Benedict-CIT-Dept.pdf" download class="btn btn-outline-primary" id="downloadCv">Download CV</a>
+                    <!-- Download CV button -->
+                    <a href="Monwuba-Benedict-CIT-Dept.pdf" class="btn btn-outline-primary" id="downloadCv">Download CV</a>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -579,6 +579,7 @@
         </div>
     </div>
 </section>
+
 
 
     <!-- About Section -->
@@ -1088,6 +1089,7 @@
             });
             
   // Download CV button
+// Download CV button with SweetAlert
 const downloadCv = document.getElementById('downloadCv');
 
 downloadCv.addEventListener('click', function(e) {
@@ -1102,7 +1104,7 @@ downloadCv.addEventListener('click', function(e) {
         cancelButtonText: 'Cancel'
     }).then((result) => {
         if (result.isConfirmed) {
-            // Set the correct CV file path
+            // Start the download
             window.location.href = 'Monwuba-Benedict-CIT-Dept.pdf';
 
             Swal.fire(
@@ -1113,6 +1115,7 @@ downloadCv.addEventListener('click', function(e) {
         }
     });
 });
+
 
             
             // Activate Bootstrap scrollspy
@@ -1149,5 +1152,6 @@ downloadCv.addEventListener('click', function(e) {
 </body>
 
 </html>
+
 
 
