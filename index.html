@@ -569,8 +569,8 @@
                 <p>I'm a web developer with extensive experience for over years. My expertise includes creating website designs, graphic designs, automated Telegram bots, software development, and many more.</p>
                 <div class="mt-4">
                     <a href="#contact" class="btn btn-primary me-3">Hire Me</a>
-                    <!-- Download CV button -->
-                    <a href="Monwuba-Benedict-CIT-Dept.pdf" class="btn btn-outline-primary" id="downloadCv">Download CV</a>
+                    <!-- View CV button -->
+                    <a href="#" class="btn btn-outline-primary" id="viewCv">View CV</a>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -579,6 +579,7 @@
         </div>
     </div>
 </section>
+
 
 
 
@@ -1089,32 +1090,33 @@
             });
             
   // Download CV button
-// Download CV button with SweetAlert
-const downloadCv = document.getElementById('downloadCv');
+// View CV button with SweetAlert
+const viewCv = document.getElementById('viewCv');
 
-downloadCv.addEventListener('click', function(e) {
+viewCv.addEventListener('click', function(e) {
     e.preventDefault();
     
     Swal.fire({
-        title: 'Download CV',
-        text: 'Would you like to download my CV?',
+        title: 'View CV',
+        text: 'Would you like to view my CV in your browser?',
         icon: 'question',
         showCancelButton: true,
-        confirmButtonText: 'Yes, download',
+        confirmButtonText: 'Yes, view',
         cancelButtonText: 'Cancel'
     }).then((result) => {
         if (result.isConfirmed) {
-            // Start the download
-            window.location.href = 'Monwuba-Benedict-CIT-Dept.pdf';
+            // Open the PDF in a new tab (view only)
+            window.open('Monwuba-Benedict-CIT-Dept.pdf', '_blank');
 
             Swal.fire(
-                'Download Started!',
-                'The download should begin shortly.',
+                'Opening...',
+                'Your CV will open in a new tab.',
                 'success'
             );
         }
     });
 });
+
 
 
             
@@ -1152,6 +1154,7 @@ downloadCv.addEventListener('click', function(e) {
 </body>
 
 </html>
+
 
 
 
